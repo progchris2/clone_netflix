@@ -10,7 +10,7 @@ import useManagementSign from '../../../services/hooks/managementSign';
 import { RenderItemsFields } from './items/itemsFields';
 import { uniqueElement } from '../../../config/utils/helpers.util';
 
-const SignApp = ({ data }: ISignApp) => {
+const SignApp = ({ data, typeForm }: ISignApp) => {
     const { state, updateField, __handleSubmit } = useManagementSign();
 
     const handleSubmit = (e: { preventDefault: () => void }) => {
@@ -26,10 +26,12 @@ const SignApp = ({ data }: ISignApp) => {
         updateField(e);
     };
 
+    const getTitle = () => (typeForm ? 'identifier' : 'enregister');
+
     return (
         <div className="sign-app">
             <form className="form" onSubmit={handleSubmit}>
-                <h2>S&apos; identifier</h2>
+                <h2>S&apos;{getTitle()}</h2>
                 {data.map((item: ISign) => (
                     <RenderItemsFields
                         key={uniqueElement()}
@@ -41,15 +43,19 @@ const SignApp = ({ data }: ISignApp) => {
                         placeholder={item.placeholder}
                     />
                 ))}
-                <Button color={Colors.red}>{signEnum.login}</Button>
+                <Button color={Colors.red}>
+                    {typeForm ? signEnum.login : signEnum.logout}
+                </Button>
                 <div className="sub-items">
-                    <FieldGroup
-                        handleChange={handleChange}
-                        type="checkbox"
-                        id="remember"
-                        checked={state.memory}
-                    />
-                    <SubItems />
+                    {typeForm && (
+                        <FieldGroup
+                            handleChange={handleChange}
+                            type="checkbox"
+                            id="remember"
+                            checked={state.memory}
+                        />
+                    )}
+                    <SubItems type={typeForm} />
                 </div>
             </form>
         </div>

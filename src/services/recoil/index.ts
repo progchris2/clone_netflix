@@ -2,20 +2,20 @@ import { atom, GetRecoilValue, selector } from 'recoil';
 
 interface IGetStatusConnection {
     isConnected: boolean;
+    isSignedIn: boolean;
 }
 
-const verifyIsConnected = atom({
+export const useStateSign = atom({
     key: 'verify-if-connect',
     default: {
         isConnected: false,
+        isSignedIn: true,
     },
 });
 
 export const getStatusConnection = selector({
-    key: 'verifyIsConnected',
+    key: 'get-status-connection',
     get: ({ get }: { get: GetRecoilValue }): IGetStatusConnection => {
-        const status = get(verifyIsConnected);
-        console.log(status);
-        return status;
+        return <IGetStatusConnection>get(useStateSign);
     },
 });

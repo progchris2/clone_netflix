@@ -5,6 +5,7 @@ export enum signEnum {
     add_field,
     submit_form,
     login = 'Se connecter',
+    logout = "s'enregistrer",
     errorField = 'Error champs, verifier la lnogueur des caratères',
 }
 

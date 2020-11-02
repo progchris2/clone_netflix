@@ -7,7 +7,7 @@ export interface ISign {
 
 export interface ISignApp {
     data: ISign[];
-    typeForm: string;
+    typeForm: boolean;
 }
 
 export interface IStateSign {

@@ -12,5 +12,37 @@
       "value": "",
       "placeholder": "Mot de passe"
     }
+  ],
+  "signUp": [
+    {
+      "name": "pseudo",
+      "type": "text",
+      "value": "",
+      "placeholder": "Nom de l'utilisateur"
+    },
+    {
+      "name": "mail",
+      "type": "mail",
+      "value": "",
+      "placeholder": "Votre mail"
+    },
+    {
+      "name": "phone",
+      "type": "phone",
+      "value": "",
+      "placeholder": "Votre phone"
+    },
+    {
+      "name": "password",
+      "type": "password",
+      "value": "",
+      "placeholder": "Saisissez votre mot de passe"
+    },
+    {
+      "name": "password1",
+      "type": "password",
+      "value": "",
+      "placeholder": "Ressaisissez votre mot de passe"
+    }
   ]
 }
