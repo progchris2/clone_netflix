@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from '../logo.svg';
-import './App.css';
+import { useRecoilValue } from 'recoil';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './App.css';
+import { LayoutContainer, SignApp } from '../components';
+import { signEnum } from '../config/enums/index.enum';
+import sign from '../components/sign/sign.model.json';
+import { getStatusConnection } from '../services/recoil/atoms/connected.atom';
+
+
+const App = (): JSX.Element => {
+    const index = signEnum[signEnum.signIn];
+    // @ts-ignore
+    const data = sign[index];
+    const { isConnected } = useRecoilValue(getStatusConnection);
+
+    return (
+        <LayoutContainer>
+            {!isConnected ? <SignApp data={data} typeForm="signIn" /> : 'cool'}
+        </LayoutContainer>
+    );
+};
 
 export default App;

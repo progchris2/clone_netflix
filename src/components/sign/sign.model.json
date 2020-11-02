@@ -1,0 +1,16 @@
+{
+  "signIn": [
+    {
+      "name": "identifiant",
+      "type": "text",
+      "value": "",
+      "placeholder": "Email ou numero téléphone"
+    },
+    {
+      "name": "password",
+      "type": "password",
+      "value": "",
+      "placeholder": "Mot de passe"
+    }
+  ]
+}

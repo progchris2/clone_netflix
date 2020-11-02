@@ -1,0 +1,73 @@
+.sign-app {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    padding-bottom: 60px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+    background-color: var(--bkg-form-color);
+}
+
+.form h2 {
+    width: 80%;
+    text-shadow: 1px 1px 1px var( --text-shadow);
+    color: var(--white-color);
+    margin: 40px 0 15px 0;
+}
+
+.form .sub-items {
+    width: 80%;
+}
+
+.sub-items-fbk {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px 0;
+    font-size: 0.8em;
+}
+
+.sub-items-fbk span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sub-items-fbk:nth-child(1) {
+    color: red;
+    cursor: pointer;
+}
+
+.sub-items-sign-up {
+    margin: 10px 0;
+    font-size: 0.8em;
+}
+
+.sub-items-sign-up span:first-child {
+    color: white;
+}
+
+.sub-items-sign-up span:last-child {
+    color: red;
+    cursor: pointer;
+}
+
+.sub-items-learn {
+    font-size: 0.8em;
+}
+
+.sub-items-learn span:first-child {
+    color: white;
+}
+
+
