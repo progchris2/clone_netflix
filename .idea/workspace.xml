@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eecc9c0-d6b1-4de8-8f57-d220b9b02f2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config/routers/route.model.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign/in/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign/in/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign/in/items/subItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign/in/items/subItems.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign/sign.model.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign/sign.model.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/enums/index.enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/enums/index.enum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/utils/interfaces.util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/utils/interfaces.util.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/recoil/atoms/connected.atom.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/recoil/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +69,7 @@
       <workItem from="1604172195750" duration="44000" />
       <workItem from="1604172242047" duration="443000" />
       <workItem from="1604172738453" duration="11195000" />
-      <workItem from="1604233317712" duration="35815000" />
+      <workItem from="1604233317712" duration="36120000" />
     </task>
     <task id="LOCAL-00001" summary="implementation of signIn and error management linked to the different fields&#10;alert corrections">
       <created>1604280786109</created>
@@ -86,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604280786109</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="setting up the signUp form">
+      <created>1604295184104</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604295184104</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +95,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="implementation of signIn and error management linked to the different fields" />
     <MESSAGE value="implementation of signIn and error management linked to the different fields&#10;alert corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementation of signIn and error management linked to the different fields&#10;alert corrections" />
+    <MESSAGE value="setting up the signUp form" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting up the signUp form" />
   </component>
 </project>
